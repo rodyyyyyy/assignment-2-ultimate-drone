@@ -1,0 +1,563 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*^<navbar-start>*/
+.navbar{
+    background-color: lavender;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    padding-block: 10px;
+    border-bottom: 1px violet solid;
+    z-index: 9999;
+}
+.navbar .nav-left .image img{
+    width: 45px;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.nav-right ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+.nav-right a{
+    color: black;
+    text-decoration: none;
+}
+.navbar .nav-right .home{
+    color: blueviolet;
+    border-bottom: 2px solid blueviolet;
+}
+li a:hover{
+    color: blueviolet;
+    border-bottom: 2px solid blueviolet;
+}
+/*^<navbar-end>*/
+
+/*^<hero-section-start>*/
+.hero-section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.hero-section .container .inner img{
+    width: 100%;
+}
+.hero-section{
+    position: relative;
+    top: 100px;
+    height: 100vh;
+    margin-block: 50px ;
+    padding: 20px;
+}
+
+.hero-section .inner span{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    color: white;
+    background: blueviolet;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.hero-section .text .content .boxes{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 0.5;
+}
+.hero-section .text .content h1 .pro{
+    color: blueviolet;
+}
+.hero-section .text .content h1{
+    font-size: 50px;
+}
+.hero-section .text .content p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.container{
+    border: gray solid 2px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.container img{
+    border-radius: 20px;
+}
+.hero-section .text .content .new-price{
+    font-size: 30px;
+    font-weight: 600;
+}
+.hero-section .text .content .new-price .price{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+.hero-section .text .content .new-price .discount{
+    color: red;
+    background-color: rgb(255, 0, 0 ,.3);
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.hero-section .text .btn img{
+    width: 30px;
+}
+.hero-section .text .btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.hero-section .text .btn button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+.hero-section .text .btn .btn-1{
+    color: white;
+    background-color: blueviolet;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.hero-section .text .btn .btn-2{
+    border: 2px solid gray ;
+    border-radius: 30px;
+    font-size: 20px;
+}
+/*^<hero-section-end>*/
+
+/*^<specification-start>*/
+.Specification{
+    width: 100%;
+    background-color: lavender;
+}
+.specification-content{
+    text-align: center;
+    padding: 20px;
+}
+.Specification .specification-content h2 span{
+    color: blueviolet;
+}
+.Specification .flexbox{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.Specification .flexbox .card{
+    width: 33,333333%;
+}
+.Specification .flexbox .card .inner img{
+    width: 50px;
+    background-color: lavender;
+    padding: 10px;
+    border-radius: 20px;
+}
+.Specification .flexbox .card .inner{
+    background-color: white;
+    padding: 10px;
+    margin-block: 10px;
+    border-radius: 20px;
+}
+.Specification .flexbox .card .inner .description{
+    color: blueviolet;
+    text-transform: uppercase;
+}
+.Specification .flexbox .card .inner h3{
+    font-size: 25px;
+}
+.Specification .flexbox .card .inner .sentence{
+    line-height: 1.5;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lavender;
+}
+.Specification .flexbox .card .inner .num{
+    font-weight: 900;
+    font-size: 20px;
+    color: blueviolet;
+}
+.Specification .flexbox .card .inner .text{
+    color: grey;
+}
+.explore-accessories{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    color: white;
+    align-items: center;
+    padding: 30px;
+    border-radius: 20px;
+    margin-block: 20px;
+}
+.explore-accessories .link a{
+    text-decoration: none;
+    color: blueviolet;
+    background-color: white;
+    border-radius: 40px;
+    padding: 20px;
+}
+.Specification .explore-accessories .text-bold{
+    font-size: 20px;
+    font-weight: 900;
+}
+/*^<specification-end>*/
+
+/*^ Rating&review-start  */
+.Rating-review{
+    /* background-color: red; */
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.rating-content{
+    text-align: center;
+    padding: 20px;
+}
+.Rating-review .rating-content h2 span{
+    color: blueviolet;
+}
+.Rating-review .left{
+    width: 30%;
+    line-height:2;
+    border: 2px #eee solid;
+    border-radius: 20px;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+.Rating-review .left .images img{
+    width: 20px;
+}
+.Rating-review .left .ranks img{
+    width: 10px;
+}
+.Rating-review .left .ranks .empty{
+    width: 150px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 20px;
+}
+.rank1{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.rank2{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.rank3{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.rank4{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.rank5{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-bottom: 2px #eee solid;
+}
+.Rating-review .rate{
+    display: flex;
+    gap: 10px;
+}
+.Rating-review .left .center{
+    text-align: center;
+}
+/* .Rating-review .content .left .ranks .rank1 .empty-1{
+    width: 78%;
+    background-color: gold;
+}
+.Rating-review .content .left .ranks .rank1 .empty-1{
+    width: 15%;
+    background-color: gold;
+}
+.Rating-review .content .left .ranks .rank1 .empty-1{
+    width: 5%;
+    background-color: gold;
+}
+.Rating-review .content .left .ranks .rank1 .empty-1{
+    width: 1.5%;
+    background-color: gold;
+}
+.Rating-review .content .left .ranks .rank1 .empty-1{
+    width: 0.5%;
+    background-color: gold;
+} */
+.Rating-review .right .images img{
+    width: 10px;
+}
+.Rating-review .right .cards .card .left img{
+    width: 50px;
+    border-radius: 25px;
+}
+.Rating-review .right .cards .card .left{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    gap: 5px;
+    border: none;
+}
+.Rating-review .content{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.Rating-review .right{
+    line-height:1.7;
+    /* border: 2px #eee solid; */
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+}
+.Rating-review .right .cards .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Rating-review .content .right .cards .card .right{
+    border: none;
+} 
+.Rating-review .content .right .cards .card .right .one{
+    color: blueviolet;
+    background-color: lavenderblush;
+    padding: 5px;
+    border-radius: 10px;
+}
+.Rating-review .content .right .cards .card-1{
+        border: 2px #eee solid;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+}
+.Rating-review .final a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid blueviolet;
+    border-radius: 40px;
+    background-color: blueviolet;
+}
+.Rating-review .final a:hover{
+    background-color: white;
+    color: blueviolet;
+}
+/*^ Rating&review-end  */
+
+/*^related-products-start*/
+.text-center{
+    text-align: center;
+}
+.color-blueviolet{
+    color: blueviolet;
+}
+.bg-lavander{
+    background-color: lavender;
+}
+.p-30{
+    padding: 30px;
+}
+.w-80{
+    width: 80%;
+    margin: auto;
+}
+.related-products .cards{
+    display: flex;
+    gap: 20px;
+}
+.related-products .cards .card .inner{
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #d0c2c2;
+    border-radius: 20px;
+}
+.related-products .cards .card .inner img{
+    width: 100%;
+    border-radius: 20px;
+}
+.related-products .cards .card .inner .price{
+    font-weight: 600;
+    font-size: 20px;
+}
+.related-products .cards .card .inner a{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+}
+.position{
+    position: relative;
+}
+.position span{
+    position: absolute;
+    color: white;
+    background-color: aqua;
+    border-radius: 15px;
+    padding: 5px;
+    top: 5px;
+    left: 5px;
+}
+
+.related-products .final a{
+
+    margin-top: 50px;
+    text-decoration: none;
+    color: blueviolet;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid blueviolet;
+}
+.related-products .final a:hover{
+    color: white;
+    background-color: blueviolet;
+}
+/*^related-products-end*/
+
+/*^ footer-start */
+.bg-black{
+    background-color: black;
+}
+.footer{
+    margin: auto;
+    padding:20px;
+    color: white;
+}
+.footer .icon img{
+    width: 40px;
+    padding:10px;
+    border-radius: 10px;
+}
+.footer .icon{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.bg-bluevoilet{
+    background-color: blueviolet;
+}
+.footer .images img{
+    width: 50px;
+    background-color: rgb(238, 238, 238,0.2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+/* .img1:hover{
+    background-color: blue;
+}
+.img2:hover{
+    background-color: skyblue;
+}
+.img3:hover{
+    background-color: palevioletred;
+}
+.img4:hover{
+    background-color: red;
+} */
+.footer .card-2 ul{
+    list-style: none;
+}
+.footer .card-2 ul li a{
+    text-decoration: none;
+    line-height: 1.5px;
+    color: gray;
+}
+.footer .card-2 ul li a:hover{
+    border: none;
+    color: white;
+}
+.footer .card-3 ul{
+    list-style: none;
+}
+.footer .card-3 ul li a{
+    text-decoration: none;
+    line-height: 1.5px;
+    color: gray;
+}
+.footer .card-3 ul li a:hover{
+    border: none;
+    color: white;
+}
+.footer .card-4 ul{
+    list-style: none;
+}
+.footer .card-4 ul li a{
+    text-decoration: none;
+    line-height: 1.5px;
+    color: gray;
+}
+.footer .card-4 ul li a:hover{
+    border: none;
+    color: white;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+/* .footer .card-4{
+    border-bottom: 2px solid gray;
+} */
+.footer .card{
+    width: 25%;
+}
+.right-reserved{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 20px;
+    gap: 20px;
+}
+.right-reserved .images img{
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.right-reserved .images .image2{
+    width: 50px;
+}
